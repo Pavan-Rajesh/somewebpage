@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: rgb(87, 88, 80);
+}
+
+body {
+  max-width: 920px;
+  background-color: rgb(205, 205, 196);
+  min-height: 100vh;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  width: 100vw;
+}
+
+button {
+  padding: 15px 25px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.nav-item a {
+  margin: 20px;
+  text-decoration: none;
+  color: rgb(87, 88, 80);
+}
+
+button {
+  background-color: darkgreen;
+  color: white;
+}
+
+.company-name {
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 80%;
+}
+
+main {
+  width: 100vw;
+}
+
+.inner-content {
+  max-width: 80%;
+  height: calc(100vh - 160px);
+  margin: 0 auto;
+}
+
+.company-details {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  color: rgb(87, 88, 80);
+}
+
+.image-card {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.call-img {
+  width: 300px;
+  height: 400px;
+}
+
+.caption {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.company-details div {
+  margin: 10px 0px;
+}
+
+.text-yellow {
+  color: rgb(185, 195, 70);
+}
+
+.text-black {
+  color: black;
+}
+
+.menu-burger {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .image-card {
+    display: none;
+  }
+  .company-details {
+    width: 100%;
+  }
+  .nav-item:nth-child(2) {
+    display: none;
+  }
+  .nav-item:nth-child(3) {
+    display: none;
+  }
+  .menu-burger {
+    display: block;
+  }
+  .inner-content {
+    height: calc(100vh - 240px);
+  }
+}/*# sourceMappingURL=styles.css.map */
